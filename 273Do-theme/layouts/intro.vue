@@ -17,5 +17,6 @@ const style = computed(() => handleBackground(props.background));
     <div class="my-auto">
       <slot />
     </div>
+    <Footer />
   </div>
 </template>
