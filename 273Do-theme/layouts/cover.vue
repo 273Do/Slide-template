@@ -24,5 +24,6 @@ const slideTitleSplit: string[] = (slideTitle ?? "").split("/");
         <img src="/imgs/273do-logo.svg" class="w-20 mt-4" />
       </div>
     </div>
+    <slot />
   </div>
 </template>

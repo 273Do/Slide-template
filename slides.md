@@ -10,7 +10,6 @@ src: ./pages/01-cover.md
 ---
 
 ---
-layout: intro
 src: ./pages/02-self-intro.md
 ---
 
