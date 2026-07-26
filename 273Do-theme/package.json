@@ -27,7 +27,7 @@
     "colorSchema": "both",
     "defaults": {
       "fonts": {
-        "sans": "Nunito Sans",
+        "sans": "Zen Old Mincho",
         "mono": "Fira Code"
       }
     }

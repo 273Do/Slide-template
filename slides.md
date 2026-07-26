@@ -568,6 +568,10 @@ dragPos:
 square: 691,32,167,_,-16
 ---
 
+dragPos:
+square: 0,-93,0,0
+---
+
 # Draggable Elements
 
 Double-click on the draggable elements to edit their positions.
