@@ -3,11 +3,11 @@ theme: ./273Do-theme
 title: Slide Title
 drawings:
   persist: false
-transition: slide-left
+transition: view-transition
+src: ./pages/01-cover.md
 ---
 
-# タイトル
-
 ---
 
-# スライド 2
+src: ./pages/02-slide.md
+---

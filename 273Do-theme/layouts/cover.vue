@@ -2,10 +2,12 @@
 import Header from "../components/Header.vue";
 
 const titleSplit: string[] = ["ここに", "スライドタイトルを", "記述する"];
+const eventTitle = "Event Title Here";
+const eventSubTitle = "Sub Title Here";
 </script>
 
 <template>
-  <div class="slidev-layout cover flex flex-col h-full p-12">
+  <div class="slidev-layout flex flex-col h-full p-12">
     <Header />
     <div class="flex-1 flex flex-col justify-center">
       <span
@@ -18,8 +20,8 @@ const titleSplit: string[] = ["ここに", "スライドタイトルを", "記�
       >
       <div class="flex w-full items-center justify-between">
         <div class="flex flex-col mt-4">
-          <span>Event Title Here</span>
-          <span>Sub Title Here</span>
+          <span>{{ eventTitle }}</span>
+          <span>{{ eventSubTitle }}</span>
         </div>
         <img src="/imgs/273do-logo.svg" class="w-20 mt-4" />
       </div>
