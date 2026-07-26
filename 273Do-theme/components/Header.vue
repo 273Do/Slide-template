@@ -1,5 +1,13 @@
+<script setup lang="ts">
+type Props = {
+  date: number;
+};
+
+const { date } = defineProps<Props>();
+</script>
+
 <template>
   <footer class="flex items-center justify-between text-xs">
-    <span>YYYY-MM-DD</span>
+    <span>{{ date }}</span>
   </footer>
 </template>

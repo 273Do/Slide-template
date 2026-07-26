@@ -15,12 +15,17 @@
 
   h1,
   h2,
-  h3,
   .cover-title,
   .slidev-code-block-title {
     width: fit-content;
     background-color: var(--primary);
     color: var(--primary-foreground);
+  }
+
+  :not(pre) > code {
+    background-color: var(--secondary);
+    padding: 0.15em 0.4em;
+    border-radius: 0.25em;
   }
 
   .shiki {
