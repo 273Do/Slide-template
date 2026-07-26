@@ -1,0 +1,36 @@
+:root {
+  --slidev-theme-primary: rgb(246, 246, 245);
+  --background: rgb(246, 246, 245);
+  --foreground: rgb(50, 50, 47);
+  --primary: rgb(50, 50, 47);
+  --primary-foreground: rgb(246, 246, 245);
+  --secondary: rgb(236, 236, 234);
+  --secondary-foreground: rgb(50, 50, 47);
+  --muted-foreground: rgb(155, 155, 150);
+}
+
+.slidev-layout {
+  background-color: var(--background);
+  color: var(--foreground);
+
+  h1,
+  h2,
+  h3,
+  .slidev-code-block-title {
+    width: fit-content;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+  }
+
+  .shiki {
+    background-color: var(--foreground) !important;
+  }
+
+  a {
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
