@@ -16,6 +16,7 @@
   h1,
   h2,
   h3,
+  .cover-title,
   .slidev-code-block-title {
     width: fit-content;
     background-color: var(--primary);
