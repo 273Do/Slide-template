@@ -10,5 +10,10 @@ src: ./pages/01-cover.md
 ---
 
 ---
-src: ./pages/02-slide.md
+layout: intro
+src: ./pages/02-self-intro.md
+---
+
+---
+src: ./pages/03-slide.md
 ---
