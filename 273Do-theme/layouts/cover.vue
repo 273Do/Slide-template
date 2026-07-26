@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import Header from "../components/Header.vue";
+const { slideTitle, eventTitle, eventSubTitle } = $slidev.configs;
 
-const titleSplit: string[] = ["ここに", "スライドタイトルを", "記述する"];
-const eventTitle = "Event Title Here";
-const eventSubTitle = "Sub Title Here";
+const slideTitleSplit: string[] = (slideTitle ?? "").split("/");
 </script>
 
 <template>
@@ -11,7 +9,7 @@ const eventSubTitle = "Sub Title Here";
     <Header />
     <div class="flex-1 flex flex-col justify-center">
       <span
-        v-for="(word, index) in titleSplit"
+        v-for="(word, index) in slideTitleSplit"
         :key="index"
         class="inline-block w-fit text-6xl leading-tight"
         bg="[var(--primary)]"
@@ -19,7 +17,7 @@ const eventSubTitle = "Sub Title Here";
         >{{ word }}</span
       >
       <div class="flex w-full items-center justify-between">
-        <div class="flex flex-col mt-4">
+        <div class="flex flex-col mt-10">
           <span>{{ eventTitle }}</span>
           <span>{{ eventSubTitle }}</span>
         </div>
