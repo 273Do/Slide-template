@@ -7,7 +7,7 @@ const { currentSlideNo, total } = useNav();
 </script>
 
 <template>
-  <footer class="flex items-center justify-between text-xs" text="[color:var(--muted-foreground)]">
+  <footer class="flex items-center justify-between text-xs">
     <span>{{ slideTitle }}</span>
     <span>{{ currentSlideNo }}/{{ total }}</span>
   </footer>

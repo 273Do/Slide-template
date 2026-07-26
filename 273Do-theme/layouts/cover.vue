@@ -1,12 +1,18 @@
 <script setup lang="ts">
-const { slideTitle, eventTitle, eventSubTitle } = $slidev.configs;
+type Props = {
+  date: number;
+  slideTitle: string;
+  logo: string;
+};
 
-const slideTitleSplit: string[] = (slideTitle ?? "").split("/");
+const { slideTitle, logo } = defineProps<Props>();
+
+const slideTitleSplit: string[] = slideTitle.split("/");
 </script>
 
 <template>
   <div class="slidev-layout flex flex-col h-full p-12">
-    <Header />
+    <Header :date="date" />
     <div class="flex-1 flex flex-col justify-center">
       <span
         v-for="(word, index) in slideTitleSplit"
@@ -18,10 +24,9 @@ const slideTitleSplit: string[] = (slideTitle ?? "").split("/");
       >
       <div class="flex w-full items-center justify-between">
         <div class="flex flex-col mt-10">
-          <span>{{ eventTitle }}</span>
-          <span>{{ eventSubTitle }}</span>
+          <slot name="eventTitle" />
         </div>
-        <img src="/imgs/273do-logo.svg" class="w-20 mt-4" />
+        <img :src="logo" class="w-20 mt-12" />
       </div>
     </div>
     <slot />
