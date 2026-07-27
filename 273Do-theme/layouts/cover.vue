@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import { resolveAssetUrl } from "../layoutHelper";
+
 type Props = {
   date: number;
   slideTitle: string;
   logo: string;
 };
 
-const { slideTitle, logo } = defineProps<Props>();
+const { slideTitle } = defineProps<Props>();
 
 const slideTitleSplit: string[] = slideTitle.split("/");
 </script>
@@ -26,7 +28,7 @@ const slideTitleSplit: string[] = slideTitle.split("/");
         <div class="flex flex-col mt-10">
           <slot name="eventTitle" />
         </div>
-        <img :src="logo" class="w-20 mt-12" />
+        <img :src="resolveAssetUrl(logo)" class="w-20 mt-12" />
       </div>
     </div>
     <slot />
